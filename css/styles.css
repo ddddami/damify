@@ -113,7 +113,7 @@ a {
 }
 
 .list--tick {
-  list-style-image: url(../images/tick.svg);
+  list-style-image: url(../images/sprite.svg#tick);
   padding-left: 3rem;
 }
 
@@ -125,4 +125,22 @@ a {
   .list--tick .list__item {
     padding-left: 0;
   }
+}
+
+/* Icons */
+.icon {
+  width: 40px;
+  height: 40px;
+}
+.icon--primary {
+  fill: var(--color-primary);
+}
+.icon-container {
+  background-color: #f3f9fa;
+  width: 64px;
+  height: 64px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
 }
