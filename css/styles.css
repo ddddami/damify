@@ -4,6 +4,8 @@
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
+  --color-border: #ccc;
+  --border-radius: 30px;
 }
 
 *,
@@ -202,5 +204,38 @@ a {
 @media screen and (min-width: 1024px) {
   .btn {
     font-size: 1.5rem;
+  }
+}
+/* Inputs */
+
+.input {
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+  color: var(--color-headings);
+  font-size: 2rem;
+  outline: 0;
+  padding: 1.5rem 3.5rem;
+}
+::placeholder {
+  color: #cdcbd7;
+}
+.input-group {
+  align-items: center;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+  display: flex;
+  justify-content: center;
+}
+.input-group .btn {
+  margin: 4px;
+}
+.input-group .input {
+  border: 0;
+  flex-grow: 1;
+  padding-left: 2.5rem;
+}
+@media screen and (min-width: 1024px) {
+  .input {
+    font-size: 1.5rem 1rem;
   }
 }
