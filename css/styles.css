@@ -492,3 +492,34 @@ a {
   transform: rotate(0);
   transition: transform 0.3s;
 }
+
+/* Blocks */
+.block {
+  --padding-vertical: 6rem;
+  padding: var(--padding-vertical) 2rem;
+}
+.block__header {
+  text-align: center;
+}
+.block__heading {
+  margin-top: 0;
+}
+.block--dark {
+  background-color: #000;
+}
+.block--dark .block__heading {
+  color: #fff;
+}
+.block--skewed-right {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  padding-bottom: calc(var(--padding-vertical) + 3rem);
+}
+.block--skewed-left {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  padding-bottom: calc(var(--padding-vertical) + 3rem);
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
