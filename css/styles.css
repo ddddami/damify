@@ -29,6 +29,7 @@ h1,
 h2,
 h3 {
   color: var(--color-headings);
+  line-height: 1.1;
   margin-bottom: 1rem;
 }
 h1 {
@@ -577,5 +578,28 @@ a {
   .nav__list {
     max-height: 100vh;
     opacity: 1;
+  }
+}
+
+/* Hero */
+.hero__tagline {
+  color: #b9c3cf;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+}
+.hero__image {
+  width: 100%;
+}
+.hero {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+  }
+  .hero__content {
+    align-self: center;
+    text-align: left;
   }
 }
