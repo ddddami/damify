@@ -103,11 +103,12 @@ a {
   color: #fff;
 }
 .badge--small {
-  font-size: 1.6rem 1.5rem;
+  font-size: 1.6rem;
+  padding: 0.5rem 1.5rem;
 }
 @media screen and (min-width: 1024px) {
   .badge {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
   .badge--small {
     font-size: 1.2rem;
@@ -127,7 +128,7 @@ a {
 .list--tick {
   color: var(--color-headings);
   list-style-image: url(../images/tick.svg);
-  padding: 3rem;
+  padding-left: 3rem;
 }
 
 .list--tick .list__item {
@@ -175,7 +176,7 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   outline: 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-transform: uppercase;
   white-space: nowrap;
 }
@@ -256,6 +257,7 @@ a {
   margin: 4px;
 }
 .input-group .input {
+  width: 0;
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
@@ -274,7 +276,7 @@ a {
 }
 .card__header,
 .card__body {
-  padding: 2rem 3rem;
+  padding: 2rem 7%;
 }
 .card--primary .card__header {
   background-color: var(--color-primary);
@@ -302,10 +304,10 @@ a {
   margin: 0;
 }
 .plan__price {
-  font-size: 6rem;
+  font-size: 5rem;
 }
 .plan__billing-cycle {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 300;
   opacity: 0.8;
   margin-right: 1rem;
@@ -327,14 +329,11 @@ a {
   content: url(../images/popular.svg);
   display: inline-block;
   position: absolute;
-  top: -3px;
+  top: -6px;
   right: 5%;
   width: 40px;
 }
 
-.plan--popular {
-  transform: scale(1.1);
-}
 .plan:hover {
   transform: scale(1.05);
 }
@@ -342,6 +341,9 @@ a {
   transform: scale(1.15);
 }
 @media screen and (min-width: 1024px) {
+  .plan--popular {
+    transform: scale(1.1);
+  }
   .plan__name {
     font-size: 1.4rem;
   }
@@ -614,6 +616,9 @@ a {
 }
 
 /* Hero */
+.hero .container {
+  margin: 0 auto;
+}
 .hero__tagline {
   color: #b9c3cf;
   font-size: 2rem;
@@ -641,8 +646,9 @@ a {
 }
 
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
@@ -652,6 +658,11 @@ a {
   max-width: 700px;
 }
 
+@media screen and (min-width: 380px) {
+  .block-domain__prices {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 @media screen and (min-width: 768px) {
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
@@ -662,7 +673,7 @@ a {
 .block-plans .grid {
   gap: 8rem 4rem;
 }
-.block-plans .plan {
+.block-plans .card {
   max-width: 500px;
   margin: 0 auto;
 }
@@ -782,6 +793,11 @@ a {
 .callout__heading {
   color: #fff;
 }
-.callout-signup {
-  transform: translateY(5rem);
+.callout--signup {
+  transform: translateY(5px);
+}
+@media screen and (min-width: 768px) {
+  .callout--signup {
+    transform: translateY(5rem);
+  }
 }
