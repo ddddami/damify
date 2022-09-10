@@ -221,6 +221,10 @@ a {
   padding-left: 6rem;
   padding-right: 6rem;
 }
+.btn--headings {
+  background-color: var(--color-headings);
+  color: #fff;
+}
 @media screen and (min-width: 1024px) {
   .btn {
     font-size: 1.5rem;
@@ -277,10 +281,16 @@ a {
   color: #fff;
 }
 
+.card--primary .badge--primary {
+  background: #126de4;
+}
 .card--secondary .badge--secondary {
   background: #02cdf1;
 }
 /* Plans */
+.plan {
+  transition: transform 0.2s ease-out;
+}
 .plan__name {
   color: #fff;
   font-size: 2.4rem;
@@ -305,6 +315,28 @@ a {
 .plan .list__item {
   margin-bottom: 2rem;
 }
+
+.plan--popular .card__header {
+  position: relative;
+}
+.plan--popular .card__header::before {
+  content: url(../images/popular.svg);
+  display: inline-block;
+  position: absolute;
+  top: -3px;
+  right: 5%;
+  width: 40px;
+}
+
+.plan--popular {
+  transform: scale(1.1);
+}
+.plan:hover {
+  transform: scale(1.05);
+}
+.plan--popular:hover {
+  transform: scale(1.15);
+}
 @media screen and (min-width: 1024px) {
   .plan__name {
     font-size: 1.4rem;
@@ -319,18 +351,6 @@ a {
     font-size: 1.7rem;
   }
 }
-.plan--popular .card__header {
-  position: relative;
-}
-.plan--popular .card__header::before {
-  content: url(../images/popular.svg);
-  display: inline-block;
-  position: absolute;
-  top: -3px;
-  right: 5%;
-  width: 40px;
-}
-
 /* Media */
 .media {
   display: flex;
@@ -631,4 +651,13 @@ a {
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
+}
+
+/* Plans Block */
+.block-plans .grid {
+  gap: 8rem 4rem;
+}
+.block-plans .plan {
+  max-width: 500px;
+  margin: 0 auto;
 }
