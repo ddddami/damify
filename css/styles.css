@@ -804,3 +804,16 @@ a {
     transform: translateY(5rem);
   }
 }
+
+/* Shoutouts */
+.shoutout {
+  padding: 2rem 0;
+  font-size: 1.3rem;
+  font-weight: 300;
+  border-radius: 10px;
+  color: #bbb;
+  text-align: center;
+}
+.shoutout a {
+  color: #673aff;
+}
