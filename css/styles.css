@@ -376,9 +376,10 @@ a {
 /* Quotes */
 .quote {
   color: var(--color-body-darker);
-  font-size: 3rem;
+  font-size: 110%;
   font-style: italic;
   line-height: 1.3;
+  margin: 2rem 0;
 }
 .quote__text::before {
   content: open-quote;
@@ -388,7 +389,7 @@ a {
 }
 
 .quote__author {
-  font-size: 3rem;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 500;
   margin-bottom: 0;
@@ -397,7 +398,7 @@ a {
 .quote__organization {
   color: var(--color-headings);
   opacity: 0.4;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-style: normal;
 }
 
@@ -445,7 +446,8 @@ a {
 .testimonial__image > .icon-container {
   position: absolute;
   top: 3rem;
-  right: 5px;
+  right: -30px;
+  /* right: 5px; */
 }
 @media screen and (min-width: 768px) {
   .testimonial__image > .icon-container {
