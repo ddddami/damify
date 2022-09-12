@@ -16,8 +16,9 @@ Visit the site here -> [Damify](https://damified.netlify.app)
 * Valid, semantic HTML5 code that browser love
 * Use of optimization techniques like css sprites,
 * Also, a good performance rating on web.dev/measure
-![Screenshot (40)](https://user-images.githubusercontent.com/82976159/189706634-57f37922-06db-4f3d-997f-2bb99ac29e0a.png)
----
+
+![Webpage performance rating](https://user-images.githubusercontent.com/82976159/189715023-c5197e6e-41d5-4762-befb-47fbb289e66c.png)
+___
 ## Other Pages
 ### Plans
 ![Plans](https://user-images.githubusercontent.com/82976159/189704294-550c8b9f-04c5-43ef-b9af-fe6487d3da09.png)
